@@ -5,358 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Me | Iris A. Salazar</title>
+    <title>About Me</title>
 
     <style>
-        /* ===== GENERAL ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #fff5f8, #f3f0ff);
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #fff5f8;
             color: #333;
-            line-height: 1.6;
         }
 
-        /* ===== NAVIGATION ===== */
         nav {
-            background: #ffffff;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-            color: #c05a86;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
+            background-color: #d96b91;
+            padding: 15px;
+            border-radius: 8px;
         }
 
         nav a {
-            color: #444;
+            color: white;
             text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
+            margin-right: 20px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            color: #c05a86;
+            color: #ffe1eb;
         }
 
-        /* ===== MAIN CONTAINER ===== */
         .container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 25px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 25px;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* ===== HERO SECTION ===== */
-        .hero {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 25px;
-            padding: 50px;
-            display: flex;
-            align-items: center;
-            gap: 45px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            margin-bottom: 30px;
+        h1 {
+            color: #c6537c;
+        }
+
+        h2 {
+            color: #d96b91;
+            margin-top: 25px;
         }
 
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             object-fit: cover;
             border-radius: 50%;
-            border: 6px solid #f4c6d8;
-            box-shadow: 0 8px 20px rgba(192, 90, 134, 0.2);
+            border: 3px solid #d96b91;
+            margin-top: 10px;
         }
 
-        .hero-text h1 {
-            font-size: 42px;
-            color: #b84f7b;
-            margin-bottom: 10px;
+        li {
+            margin-bottom: 8px;
         }
 
-        .hero-text h3 {
-            color: #777;
-            font-weight: 500;
-            margin-bottom: 15px;
-        }
-
-        .hero-text p {
-            color: #555;
-            max-width: 600px;
-        }
-
-        /* ===== SECTIONS ===== */
-        .section {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-        }
-
-        .section h2 {
-            color: #b84f7b;
-            margin-bottom: 15px;
-        }
-
-        /* ===== HOBBIES ===== */
-        .hobbies {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .hobby-card {
-            background: #fff5f8;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            transition: 0.3s;
-            border: 1px solid #f6d9e4;
-        }
-
-        .hobby-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(192, 90, 134, 0.15);
-        }
-
-        .hobby-card span {
-            font-size: 35px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .hobby-card h3 {
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .hobby-card p {
-            font-size: 14px;
-            color: #777;
-        }
-
-        /* ===== SKILLS ===== */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .skill {
-            background: #f4e6ff;
-            color: #70448c;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        /* ===== BUTTON ===== */
         .button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #c05a86;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #d96b91;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
+            border-radius: 5px;
         }
 
         .button:hover {
-            background: #a94770;
-            transform: translateY(-2px);
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-            font-size: 14px;
-        }
-
-        /* ===== RESPONSIVE DESIGN ===== */
-        @media (max-width: 768px) {
-
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                padding: 35px 25px;
-            }
-
-            .hero-text h1 {
-                font-size: 34px;
-            }
-
-            .hobbies {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                margin-top: 30px;
-            }
+            background-color: #b94f75;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- ===== NAVIGATION ===== -->
     <nav>
-        <div class="logo">Iris A. Salazar</div>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
+    <div class="container">
 
-    <!-- ===== MAIN CONTENT ===== -->
-    <main class="container">
+        <h1>About Me</h1>
 
-        <!-- Profile / Introduction -->
-        <section class="hero">
+        <img
+            class="profile-img"
+            src="https://via.placeholder.com/180"
+            alt="Profile Picture"
+        >
 
-            <img
-                class="profile-img"
-                src="https://via.placeholder.com/200"
-                alt="Profile Picture"
-            >
+        <p>
+            Hello! I am Iris A. Salazar, a 20-year-old Information Technology
+            student. I enjoy learning about technology, web development,
+            and creating simple digital projects.
+        </p>
 
-            <div class="hero-text">
-                <h1>Hi, I'm Iris! 👋</h1>
+        <p>
+            I am currently learning how to build and deploy websites using
+            HTML, CSS, Python, Git, and GitHub Codespaces.
+        </p>
 
-                <h3>BSIT Student | Web Technology Enthusiast</h3>
+        <h2>Hobbies & Interests</h2>
 
-                <p>
-                    Hello! I am Iris A. Salazar, a 20-year-old Information
-                    Technology student who enjoys learning about technology,
-                    web development, and creative digital projects.
-                    I am always interested in learning new skills and
-                    improving my knowledge in the IT field.
-                </p>
+        <ul>
+            <li>Web Development and Coding</li>
+            <li>Photography</li>
+            <li>Listening to Music</li>
+            <li>Café Hopping</li>
+            <li>Learning About Technology</li>
+        </ul>
 
-                <a href="contact.html" class="button">
-                    Get in Touch
-                </a>
-            </div>
+        <h2>Skills</h2>
 
-        </section>
+        <ul>
+            <li>HTML and CSS</li>
+            <li>Python</li>
+            <li>Git and GitHub</li>
+            <li>Basic Database Management</li>
+        </ul>
 
+        <a href="contact.html" class="button">Contact Me</a>
 
-        <!-- About Me -->
-        <section class="section">
-
-            <h2>About Me</h2>
-
-            <p>
-                I am currently learning how to build and deploy websites
-                using HTML, CSS, Python, Git, and GitHub Codespaces.
-                I enjoy creating simple but functional websites while
-                exploring different technologies and improving my
-                problem-solving skills.
-            </p>
-
-        </section>
-
-
-        <!-- Hobbies -->
-        <section class="section">
-
-            <h2>Hobbies & Interests</h2>
-
-            <div class="hobbies">
-
-                <div class="hobby-card">
-                    <span>💻</span>
-                    <h3>Web Development</h3>
-                    <p>
-                        Learning how to create websites and explore
-                        different web technologies.
-                    </p>
-                </div>
-
-                <div class="hobby-card">
-                    <span>📸</span>
-                    <h3>Photography</h3>
-                    <p>
-                        Taking photos and capturing interesting moments
-                        and experiences.
-                    </p>
-                </div>
-
-                <div class="hobby-card">
-                    <span>☕</span>
-                    <h3>Café Hopping</h3>
-                    <p>
-                        Exploring cafés, enjoying coffee, and spending
-                        relaxing time with friends.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Skills -->
-        <section class="section">
-
-            <h2>Skills & Technologies</h2>
-
-            <div class="skills">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">Python</span>
-                <span class="skill">Git</span>
-                <span class="skill">GitHub</span>
-                <span class="skill">Web Development</span>
-                <span class="skill">Database Management</span>
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>© 2026 Iris A. Salazar. All rights reserved.</p>
-        <p>Made with HTML & CSS ♡</p>
-    </footer>
+    </div>
 
 </body>
 </html>
